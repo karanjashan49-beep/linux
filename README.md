@@ -8,7 +8,7 @@ This is my first repository
   |free   |paid |
   ```
    mkdir command is used to create a directory
-  
+  This is a linux file.
 
   
   
