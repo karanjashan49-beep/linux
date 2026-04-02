@@ -1,7 +1,7 @@
 # linux
 This is my first repository
-- linux is a opreating system
-- **It is a open source operating system**
+- Linux is an opreating system.
+- **It is an open source operating system**
 - `cp`command is used to copy anything
 - | Linux | Mac |
   |-----  |-----|
