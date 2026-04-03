@@ -1,0 +1,385 @@
+# Linux Commands Cheat Sheet
+
+A practical beginner-to-advanced Linux command reference with examples.
+
+## 1) Basic Navigation
+`pwd` — Show current directory  
+Example: `pwd`
+
+`ls` — List files and folders  
+Example: `ls`
+
+`ls -la` — List all files, including hidden ones  
+Example: `ls -la`
+
+`cd /path/to/folder` — Change directory  
+Example: `cd /var/log`
+
+`cd ..` — Move one folder up  
+Example: `cd ..`
+
+`cd ~` — Go to home directory  
+Example: `cd ~`
+
+`clear` — Clear terminal screen  
+Example: `clear`
+
+## 2) File and Directory Management
+`touch file.txt` — Create an empty file  
+Example: `touch notes.txt`
+
+`mkdir test` — Create a folder  
+Example: `mkdir project`
+
+`mkdir -p a/b/c` — Create nested folders  
+Example: `mkdir -p app/src/components`
+
+`cp file1.txt file2.txt` — Copy file  
+Example: `cp notes.txt backup.txt`
+
+`cp -r dir1 dir2` — Copy folder recursively  
+Example: `cp -r project project-backup`
+
+`mv old.txt new.txt` — Rename or move file  
+Example: `mv draft.txt final.txt`
+
+`rm file.txt` — Delete file  
+Example: `rm temp.txt`
+
+`rm -r folder` — Delete folder recursively  
+Example: `rm -r old-project`
+
+`find . -name "file.txt"` — Find a file by name  
+Example: `find . -name "config.json"`
+
+`stat file.txt` — Show file details  
+Example: `stat notes.txt`
+
+`file file.txt` — Detect file type  
+Example: `file script.sh`
+
+## 3) Viewing File Content
+`cat file.txt` — Show full file content  
+Example: `cat notes.txt`
+
+`less file.txt` — View file page by page  
+Example: `less large.log`
+
+`head -n 20 file.txt` — Show first 20 lines  
+Example: `head -n 20 app.log`
+
+`tail -n 20 file.txt` — Show last 20 lines  
+Example: `tail -n 20 app.log`
+
+`tail -f app.log` — Watch log file live  
+Example: `tail -f /var/log/system.log`
+
+`wc -l file.txt` — Count lines in file  
+Example: `wc -l users.txt`
+
+## 4) Editing Text Files
+`nano file.txt` — Edit file with nano  
+Example: `nano notes.txt`
+
+`vim file.txt` — Edit file with vim  
+Example: `vim notes.txt`
+
+`sort file.txt` — Sort lines  
+Example: `sort names.txt`
+
+`uniq file.txt` — Remove adjacent duplicate lines  
+Example: `uniq names.txt`
+
+`cut -d':' -f1 /etc/passwd` — Cut first field using `:` delimiter  
+Example: `cut -d':' -f1 /etc/passwd`
+
+`tr 'a-z' 'A-Z' < file.txt` — Convert lowercase to uppercase  
+Example: `tr 'a-z' 'A-Z' < names.txt`
+
+`sed -n '1,10p' file.txt` — Print selected lines  
+Example: `sed -n '1,10p' notes.txt`
+
+`awk '{print $1}' file.txt` — Print first column  
+Example: `awk '{print $1}' data.txt`
+
+## 5) Permissions and Ownership
+`chmod 644 file.txt` — Set read/write permissions  
+Example: `chmod 644 notes.txt`
+
+`chmod +x script.sh` — Make script executable  
+Example: `chmod +x deploy.sh`
+
+`chown user:user file.txt` — Change owner and group  
+Example: `sudo chown karan:staff notes.txt`
+
+`umask` — Show default permissions mask  
+Example: `umask`
+
+## 6) User and System Information
+`whoami` — Show current user  
+Example: `whoami`
+
+`id` — Show user and group IDs  
+Example: `id`
+
+`uname -a` — Show system information  
+Example: `uname -a`
+
+`hostname` — Show host name  
+Example: `hostname`
+
+`uptime` — Show uptime and load  
+Example: `uptime`
+
+`date` — Show current date and time  
+Example: `date`
+
+`cal` — Show calendar  
+Example: `cal`
+
+`history` — Show command history  
+Example: `history`
+
+## 7) Process and Resource Monitoring
+`ps aux` — Show running processes  
+Example: `ps aux | grep nginx`
+
+`top` — Live process monitor  
+Example: `top`
+
+`htop` — Better process monitor if installed  
+Example: `htop`
+
+`pidof nginx` — Show process ID by name  
+Example: `pidof nginx`
+
+`kill 1234` — Kill process by PID  
+Example: `kill 1234`
+
+`kill -9 1234` — Force kill process  
+Example: `kill -9 1234`
+
+`pkill nginx` — Kill process by name  
+Example: `pkill nginx`
+
+`jobs` — Show background jobs  
+Example: `jobs`
+
+`bg` — Resume job in background  
+Example: `bg`
+
+`fg` — Bring job to foreground  
+Example: `fg`
+
+`free -h` — Show memory usage  
+Example: `free -h`
+
+`df -h` — Show disk usage  
+Example: `df -h`
+
+`du -sh folder` — Show folder size  
+Example: `du -sh Downloads`
+
+`lscpu` — Show CPU info  
+Example: `lscpu`
+
+`lsblk` — Show block devices  
+Example: `lsblk`
+
+`vmstat 1` — Show system performance stats  
+Example: `vmstat 1`
+
+## 8) Networking Commands
+`ip a` — Show IP addresses  
+Example: `ip a`
+
+`ip route` — Show routing table  
+Example: `ip route`
+
+`ss -tulpn` — Show listening ports  
+Example: `ss -tulpn`
+
+`ping google.com` — Check connectivity  
+Example: `ping google.com`
+
+`curl https://example.com` — Fetch web page content  
+Example: `curl https://example.com`
+
+`wget https://example.com/file` — Download file  
+Example: `wget https://example.com/file.zip`
+
+`nslookup google.com` — DNS lookup  
+Example: `nslookup google.com`
+
+`dig google.com` — Detailed DNS query  
+Example: `dig google.com`
+
+`traceroute google.com` — Show network path  
+Example: `traceroute google.com`
+
+`netstat -tulpn` — Show open ports using older tool  
+Example: `netstat -tulpn`
+
+## 9) Archives and Compression
+`tar -cvf files.tar folder/` — Create tar archive  
+Example: `tar -cvf backup.tar project/`
+
+`tar -xvf files.tar` — Extract tar archive  
+Example: `tar -xvf backup.tar`
+
+`tar -czvf files.tar.gz folder/` — Create compressed archive  
+Example: `tar -czvf backup.tar.gz project/`
+
+`tar -xzvf files.tar.gz` — Extract compressed archive  
+Example: `tar -xzvf backup.tar.gz`
+
+`zip -r archive.zip folder/` — Create zip archive  
+Example: `zip -r project.zip project/`
+
+`unzip archive.zip` — Extract zip archive  
+Example: `unzip project.zip`
+
+## 10) Package Management
+### Debian / Ubuntu
+`apt update` — Update package list  
+Example: `sudo apt update`
+
+`apt install nginx` — Install package  
+Example: `sudo apt install nginx`
+
+`apt remove nginx` — Remove package  
+Example: `sudo apt remove nginx`
+
+### RHEL / CentOS / Fedora
+`yum install nginx` — Install package with yum  
+Example: `sudo yum install nginx`
+
+`dnf install nginx` — Install package with dnf  
+Example: `sudo dnf install nginx`
+
+### Arch Linux
+`pacman -S nginx` — Install package with pacman  
+Example: `sudo pacman -S nginx`
+
+## 11) Services and Logs
+`systemctl status nginx` — Check service status  
+Example: `systemctl status nginx`
+
+`systemctl start nginx` — Start service  
+Example: `sudo systemctl start nginx`
+
+`systemctl stop nginx` — Stop service  
+Example: `sudo systemctl stop nginx`
+
+`systemctl restart nginx` — Restart service  
+Example: `sudo systemctl restart nginx`
+
+`systemctl enable nginx` — Enable service at boot  
+Example: `sudo systemctl enable nginx`
+
+`journalctl -u nginx` — Show service logs  
+Example: `journalctl -u nginx`
+
+`journalctl -xe` — Show recent system errors  
+Example: `journalctl -xe`
+
+## 12) Disk and Storage
+`mount` — Show mounted filesystems  
+Example: `mount`
+
+`mount /dev/sdb1 /mnt` — Mount a device  
+Example: `sudo mount /dev/sdb1 /mnt`
+
+`umount /mnt` — Unmount a device  
+Example: `sudo umount /mnt`
+
+`fdisk -l` — List partitions  
+Example: `sudo fdisk -l`
+
+`mkfs.ext4 /dev/sdb1` — Format partition as ext4  
+Example: `sudo mkfs.ext4 /dev/sdb1`
+
+`blkid` — Show filesystem UUIDs  
+Example: `blkid`
+
+## 13) SSH and Remote Access
+`ssh user@server` — Connect to remote machine  
+Example: `ssh karan@192.168.1.10`
+
+`scp file.txt user@server:/tmp` — Copy file to server  
+Example: `scp notes.txt karan@192.168.1.10:/tmp`
+
+`scp user@server:/tmp/file.txt .` — Copy file from server  
+Example: `scp karan@192.168.1.10:/tmp/notes.txt .`
+
+`rsync -av folder/ backup/` — Sync folders efficiently  
+Example: `rsync -av project/ backup/`
+
+## 14) Advanced and Powerful Commands
+`grep -R "searchterm" .` — Search recursively inside files  
+Example: `grep -R "TODO" .`
+
+`grep -n "main" file.txt` — Show matching lines with line numbers  
+Example: `grep -n "error" app.log`
+
+`xargs -n1 echo < list.txt` — Turn input into command arguments  
+Example: `cat files.txt | xargs -n1 echo`
+
+`tee output.txt` — Save output to file and also print it  
+Example: `ls | tee files.txt`
+
+`watch -n 2 df -h` — Run command every 2 seconds  
+Example: `watch -n 2 df -h`
+
+`nohup python app.py &` — Keep process running after terminal closes  
+Example: `nohup python app.py &`
+
+`screen` — Start screen session  
+Example: `screen`
+
+`screen -r` — Reattach screen session  
+Example: `screen -r`
+
+`tmux` — Start tmux session  
+Example: `tmux`
+
+`tmux attach` — Reattach tmux session  
+Example: `tmux attach`
+
+`crontab -e` — Edit cron jobs  
+Example: `crontab -e`
+
+`crontab -l` — List cron jobs  
+Example: `crontab -l`
+
+`env` — Show environment variables  
+Example: `env`
+
+`export VAR=value` — Set environment variable  
+Example: `export NODE_ENV=production`
+
+`alias ll='ls -la'` — Create shell shortcut  
+Example: `alias ll='ls -la'`
+
+`source ~/.bashrc` — Reload shell config  
+Example: `source ~/.bashrc`
+
+## 15) Dangerous Commands — Be Careful
+`rm -rf folder/` — Delete folder and everything inside it  
+Example: `rm -rf old-backup/`
+
+`chmod -R 777 folder/` — Give full permissions to everyone  
+Example: `chmod -R 777 shared-folder/`
+
+`dd if=/dev/zero of=file.img bs=1M count=100` — Create large dummy file  
+Example: `dd if=/dev/zero of=test.img bs=1M count=100`
+
+`shutdown -h now` — Shut down system immediately  
+Example: `sudo shutdown -h now`
+
+`reboot` — Reboot system  
+Example: `sudo reboot`
+
+## Tip
+Start with sections 1 to 5 if you are new to Linux.  
+Use sections 6 to 15 as you get more comfortable.
