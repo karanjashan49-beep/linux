@@ -1,40 +1,60 @@
-# Linux
+# Linux Repository
 
-This repository is a simple and beginner-friendly collection of Linux notes and commands.
+A beginner-friendly repository for learning Linux commands, concepts, and basic terminal usage.
 
-## About Linux
+## Table of Contents
 
-Linux is an open-source operating system used on servers, laptops, desktops, cloud platforms, and many other devices.
+- [About](#about)
+- [Features](#features)
+- [Common Linux Commands](#common-linux-commands)
+- [Linux vs Mac](#linux-vs-mac)
+- [Repository Files](#repository-files)
+- [Why This Repository Exists](#why-this-repository-exists)
 
-## What You Can Find in This Repository
+## About
 
-- Basic Linux information
+Linux is a powerful and open-source operating system used in servers, cloud systems, cybersecurity, development environments, and personal computers.
+
+This repository is designed to help beginners understand Linux in a simple and practical way.
+
+## Features
+
+- Beginner-friendly explanations
 - Useful Linux commands
-- Beginner-friendly command examples
-- A growing Linux command reference
+- Command examples
+- Basic to advanced learning material
+- Simple structure for easy understanding
 
-## Useful Linux Commands
+## Common Linux Commands
 
-- `pwd` — show the current directory
-- `ls` — list files and folders
-- `cd` — change directory
-- `mkdir` — create a new directory
-- `cp` — copy files and folders
-- `mv` — move or rename files
-- `rm` — remove files or folders
+- `pwd` — Show the current directory
+- `ls` — List files and folders
+- `cd` — Change directory
+- `mkdir` — Create a new directory
+- `cp` — Copy files and folders
+- `mv` — Move or rename files
+- `rm` — Remove files or folders
+- `cat` — Show file content
+- `nano` — Edit text files in terminal
 
 ## Linux vs Mac
 
 | Feature | Linux | Mac |
-|--------|-------|-----|
+|---------|-------|-----|
 | Cost | Usually free | Paid |
 | Source | Open source | Proprietary |
 | Customization | High | Limited |
+| Usage | Servers, development, personal use | Personal and professional use |
 
-## Repository File
+## Repository Files
 
-- `linux-commands` — contains useful Linux commands from basic to advanced levels
+- `README.md` — Main introduction to the repository
+- `linux-commands` — A Linux command reference from basic to advanced with examples
 
 ## Why This Repository Exists
 
-This repository is for learning Linux in a simple way. It helps beginners understand commands and improve step by step.
+This repository exists to make Linux learning easier for beginners. It provides simple notes and useful commands that can help users build confidence while using the terminal.
+
+## Author
+
+Created and maintained by **Karan**.
