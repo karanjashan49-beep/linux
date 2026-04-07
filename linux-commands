@@ -4,7 +4,7 @@ A practical beginner-to-advanced Linux command reference with examples.
 
 ## 1) Basic Navigation
 `pwd` — Show current directory  
-Example: `pwd`
+Example: `pwd` "present working directory"
 
 `ls` — List files and folders  
 Example: `ls`
