@@ -88,6 +88,6 @@ By Karan
 - Learning commands improves productivity
 - Practice is the key to mastering Linux
 
-## Slide 16 — Thank You
+## Slide 16 — Thank You.
 **Thank You**  
 Any Questions?
