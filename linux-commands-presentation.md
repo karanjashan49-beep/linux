@@ -1,4 +1,4 @@
-# Linux Commands Presentation
+# Linux Commands Presentation.
 
 ## Slide 1 — Title
 **Linux Commands**  
